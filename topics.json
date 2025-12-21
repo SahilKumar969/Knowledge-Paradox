@@ -78,5 +78,88 @@
         "description": "<strong>The Story:</strong> Imagine you have a cool Lego pirate ship. Over a few years, you lose pieces and replace them with new bricks. Eventually, you have replaced every single brick.<br><br><strong>The Question:</strong> Is it still the same pirate ship?<br><br><strong>The Twist:</strong> If you took all the old, broken bricks you threw away and built a ship out of them, which one is the real ship? The one with the new parts, or the one with the original junk?<br><br><strong>Why it's cool:</strong> It makes you wonder about you. Your body replaces its cells all the time. Are you the same person you were as a baby?",
         "imageUrl": "https://shitwhole.com/wp-content/uploads/2022/04/ship-shitwhole-750x410.png",
         "videoId": "0j824J9ivG4"
-    }
+    },
+
+  {
+    "id": 11,
+    "title": "The Butterfly Effect",
+    "tagline": "\"Tiny Causes, Huge Effects\"",
+    "description": "<strong>Simple Explanation:</strong> Very small actions can slowly grow into very big results, even if they seem harmless at first.<br><br><strong>Easy Story:</strong> A butterfly flaps its wings. That tiny movement slightly changes the air. Days later, those small changes help form a storm far away. The butterfly didn’t create the storm directly — it just started a chain reaction.<br><br><strong>Real Life:</strong> Missing one class → confusion → poor marks → low confidence. One small moment can change the whole outcome.",
+    "imageUrl": "https://images.prismic.io/thedecisionlab/0b72baef-8547-475d-9825-5e1f60e3cd27_The+Butterfly+Effect+2.jpg?auto=compress,format",
+    "videoId": "7GkzxbXH87U"
+  },
+  {
+    "id": 12,
+    "title": "Quantum Entanglement",
+    "tagline": "\"Spooky Action at a Distance\"",
+    "description": "<strong>Simple Explanation:</strong> Two tiny particles can become so strongly connected that they behave like a pair, even when separated by huge distances.<br><br><strong>Easy Example:</strong> Imagine two magic coins. You keep one, your friend takes the other far away. When your coin changes, the other one changes instantly — no message sent.<br><br><strong>Why it’s strange:</strong> This happens instantly, breaking our normal idea of distance and speed.",
+    "imageUrl": "https://scitechdaily.com/images/Quantum-Entanglement-Concept.jpg",
+    "videoId": "ZuvK-od647c"
+  },
+  {
+    "id": 13,
+    "title": "String Theory",
+    "tagline": "\"The Universe Is a Guitar\"",
+    "description": "<strong>Simple Explanation:</strong> Everything in the universe might be made from tiny vibrating strings instead of tiny solid dots.<br><br><strong>Easy Example:</strong> A guitar string makes different sounds depending on how it vibrates. In the same way, these tiny strings vibrate differently to create particles like electrons and light.<br><br><strong>Big Goal:</strong> String theory tries to explain all of reality using one simple idea.",
+    "imageUrl": "https://cdn1.byjus.com/wp-content/uploads/2022/02/string-theory1.png",
+    "videoId": "Da-2h2B4faU"
+  },
+  {
+    "id": 14,
+    "title": "Survivorship Bias",
+    "tagline": "\"The Hidden Failures\"",
+    "description": "<strong>Simple Explanation:</strong> We focus only on people who succeed and forget about the many who failed and disappeared from view.<br><br><strong>Easy Example:</strong> You hear stories of rich dropouts, but not about the millions who dropped out and struggled.<br><br><strong>Lesson:</strong> What we see is only part of the truth.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Survivorship-bias.svg/1200px-Survivorship-bias.svg.png",
+    "videoId": "P9WFpVsRtQg"
+  },
+  {
+    "id": 15,
+    "title": "Observer Effect",
+    "tagline": "\"Being Watched Changes Everything\"",
+    "description": "<strong>Simple Explanation:</strong> People and things behave differently when they know they are being watched or measured.<br><br><strong>Easy Example:</strong> You sit properly and focus more when a teacher is watching you.<br><br><strong>Main Idea:</strong> Just observing something can change how it behaves.",
+    "imageUrl": "https://m.media-amazon.com/images/I/711213kWmIL._AC_UF1000,1000_QL80_.jpg",
+    "videoId": "Rqh6CH1Hlvo"
+  },
+  {
+    "id": 16,
+    "title": "Confirmation Bias",
+    "tagline": "\"The Echo Chamber Brain\"",
+    "description": "<strong>Simple Explanation:</strong> Your brain prefers information that supports what you already believe and ignores anything that disagrees.<br><br><strong>Easy Example:</strong> If you think a phone brand is bad, you only notice bad reviews and skip the good ones.<br><br><strong>Problem:</strong> This makes people believe they are always right.",
+    "imageUrl": "https://www.arjunuvacha.com/p/cognitive-bias-confirmation-bias/confirmation-bias.png",
+    "videoId": "wo3xpigIjts"
+  },
+  {
+    "id": 17,
+    "title": "The Multiverse Theory",
+    "tagline": "\"Infinite Versions of You\"",
+    "description": "<strong>Simple Explanation:</strong> Our universe might not be the only one — many universes could exist at the same time.<br><br><strong>Easy Example:</strong> In this universe you studied today. In another, you played games. Both versions of you may exist.<br><br><strong>Status:</strong> This idea is not proven yet.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Hubble-Space-Telescope-Galaxy-Collection.jpg/1009px-Hubble-Space-Telescope-Galaxy-Collection.jpg",
+    "videoId": "XglOw2_lozc"
+  },
+  {
+    "id": 18,
+    "title": "Dunning–Kruger Effect",
+    "tagline": "\"Too Confident, Too Soon\"",
+    "description": "<strong>Simple Explanation:</strong> People who know very little often feel very confident, while experts realize how much there is still to learn.<br><br><strong>Easy Example:</strong> After learning basics of coding, you feel like an expert. After years, you understand how big the field really is.<br><br><strong>Truth:</strong> Real knowledge brings humility.",
+    "imageUrl": "https://www.relevancelearning.com/hs-fs/hubfs/Relevance_2024/insights/resources/Relevance_article_metacognition2.jpg?width=822&height=548&name=Relevance_article_metacognition2.jpg",
+    "videoId": "pOLmD_WVY-E"
+  },
+  {
+    "id": 19,
+    "title": "Simulation Hypothesis",
+    "tagline": "\"Are We in a Game?\"",
+    "description": "<strong>Simple Explanation:</strong> Reality might be a very advanced simulation, similar to a video game.<br><br><strong>Easy Example:</strong> Game characters don’t know they’re inside a game. In the same way, we might not know we’re inside a simulation.<br><br><strong>Why people believe it:</strong> Technology is growing fast, making realistic simulations possible.",
+    "imageUrl": "https://www.thearchitect.global/wp-content/uploads/2021/10/Group-7667397.jpg",
+    "videoId": "tlTKTTt47WE"
+  },
+  {
+    "id": 20,
+    "title": "The Trolley Problem",
+    "tagline": "\"The Moral Glitch\"",
+    "description": "<strong>Simple Explanation:</strong> A train will kill five people unless you pull a lever to change its path — but that action will kill one person instead.<br><br><strong>The Dilemma:</strong> Do you take action and cause harm, or do nothing and let more people die?<br><br><strong>Why it matters:</strong> It shows how difficult moral decisions can be.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Trolley_Problem.svg",
+    "videoId": "bOpf6KcWYyw"
+  }
+
+
 ]
