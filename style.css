@@ -283,4 +283,142 @@ iframe {
         height: auto;
         overflow-y: auto;
     }
+}/* =========================================
+   QUIZ SECTION STYLING
+   ========================================= */
+
+/* The main container for the quiz content */
+#quiz-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 0.5s ease-in-out;
 }
+
+/* Glass card effect for the quiz box */
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: #ffffff;
+    text-align: center;
+}
+
+/* The Question Text */
+.question-text {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+
+/* Container for the option buttons */
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Individual Option Buttons */
+.option-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px 20px;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    outline: none;
+}
+
+.option-btn:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateX(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Correct Answer Style (Green) */
+.option-btn.correct {
+    background: rgba(46, 213, 115, 0.5) !important;
+    border-color: #2ed573;
+    color: #fff;
+}
+
+/* Wrong Answer Style (Red) */
+.option-btn.wrong {
+    background: rgba(255, 71, 87, 0.5) !important;
+    border-color: #ff4757;
+    opacity: 0.8;
+}
+
+/* Disabled state (after an option is picked) */
+.option-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Navigation Buttons (Next / Restart) */
+.btn {
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.4);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(108, 92, 231, 0.6);
+}
+
+/* Score Display Styling */
+#score-display h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #a29bfe;
+}
+
+#score-display p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Utility Class for hiding elements */
+.hidden {
+    display: none !important;
+}
+
+/* Animation for fading in the quiz */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .glass-card {
+        padding: 1.5rem;
+    }
+    .question-text {
+        font-size: 1.2rem;
+    }
+    .option-btn {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+
+

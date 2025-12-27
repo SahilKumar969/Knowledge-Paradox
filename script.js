@@ -2,26 +2,51 @@
 
 const navList = document.getElementById('nav-list');
 const contentDisplay = document.getElementById('content-display');
+const quizContainer = document.getElementById('quiz-container');
 
-// Initialize an empty array to hold the data
+// Elements for Quiz
+const quizBox = document.getElementById('quiz-box');
+const questionText = document.getElementById('question-text');
+const optionsContainer = document.getElementById('options-container');
+const nextBtn = document.getElementById('next-btn');
+const restartBtn = document.getElementById('restart-btn');
+const scoreDisplay = document.getElementById('score-display');
+const quizNavBtn = document.getElementById('quiz-nav-btn'); // Top right button
+
+// Initialize arrays to hold data
 let topicsData = [];
+let quizData = [];
+let currentQuestionIndex = 0;
+let score = 0;
 
-// NEW: Function to Fetch Data from JSON file
-async function loadData() {
+// --- DATA FETCHING ---
+
+// Fetch Topics
+async function loadTopics() {
     try {
         const response = await fetch('topics.json');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         topicsData = await response.json();
-        
-        // Only start the app after data is received
         initNavigation();
     } catch (error) {
         console.error("Could not load topics.json:", error);
         contentDisplay.innerHTML = `<h2 style="text-align:center; color: red; margin-top:50px;">Error loading data.<br>Please ensure you are using a Local Server (e.g. Live Server).</h2>`;
     }
 }
+
+// Fetch Quiz Data (NEW)
+async function loadQuizData() {
+    try {
+        const response = await fetch('quiz.json');
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        quizData = await response.json();
+        console.log("Quiz data loaded:", quizData.length, "questions");
+    } catch (error) {
+        console.error("Could not load quiz.json:", error);
+    }
+}
+
+// --- NAVIGATION & CONTENT ---
 
 function initNavigation() {
     navList.innerHTML = ''; // Clear existing items
@@ -34,19 +59,19 @@ function initNavigation() {
         li.appendChild(button);
         navList.appendChild(li);
     });
-    // Automatically load the first topic
+    
+    // Automatically load the first topic if available
     if (topicsData.length > 0) {
         loadTopic(0);
     }
 }
 
-// Function to activate video only when clicked
-function activateVideo(videoId, containerId) {
-    const container = document.getElementById(containerId);
-    container.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-}
-
 function loadTopic(index) {
+    // Hide quiz, show content
+    quizContainer.classList.add('hidden');
+    contentDisplay.classList.remove('hidden');
+
+    // Update active sidebar button
     const btns = document.querySelectorAll('.topic-btn');
     btns.forEach(btn => btn.classList.remove('active'));
     if(btns[index]) btns[index].classList.add('active');
@@ -58,7 +83,7 @@ function loadTopic(index) {
         let videoHTML = '';
         const containerId = `video-container-${index}`;
         
-        // Use the "Facade" (Image + Play Button)
+        // Video Facade
         if(data.videoId && data.videoId.length > 2) {
             videoHTML = `
                 <div class="video-container" id="${containerId}" onclick="activateVideo('${data.videoId}', '${containerId}')">
@@ -67,7 +92,7 @@ function loadTopic(index) {
                 </div>
             `;
         } else {
-             videoHTML = `<div class="video-wrapper" style="background: #222; display: flex; justify-content: center; align-items: center; color: #666;">Video Unavailable</div>`;
+             videoHTML = `<div class="video-wrapper" style="background: #222; display: flex; justify-content: center; align-items: center; color: #666; height: 300px; border-radius: 12px;">Video Unavailable</div>`;
         }
 
         contentDisplay.innerHTML = `
@@ -84,21 +109,141 @@ function loadTopic(index) {
         `;
         contentDisplay.classList.add('visible');
         
+        // Mobile scroll reset
         if(window.innerWidth < 900) {
              document.querySelector('.content-area').scrollTop = 0;
         }
     }, 300);
 }
 
-// Start the loading process
-loadData();
+// Function to activate video iframe
+function activateVideo(videoId, containerId) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+}
+
+
+// --- QUIZ LOGIC ---
+
+// Event Listener for the "Take Quiz" button
+if (quizNavBtn) {
+    quizNavBtn.addEventListener('click', startQuiz);
+}
+
+function startQuiz() {
+    // Check if data is loaded
+    if (quizData.length === 0) {
+        alert("Quiz data is still loading... please try again in a moment.");
+        return;
+    }
+
+    // UI Updates: Hide Content, Show Quiz
+    contentDisplay.classList.add('hidden');
+    quizContainer.classList.remove('hidden');
+    
+    // Deactivate sidebar buttons
+    document.querySelectorAll('.topic-btn').forEach(btn => btn.classList.remove('active'));
+
+    // Reset Quiz State
+    currentQuestionIndex = 0;
+    score = 0;
+    scoreDisplay.classList.add('hidden');
+    quizBox.classList.remove('hidden');
+    restartBtn.classList.add('hidden');
+    nextBtn.classList.add('hidden');
+
+    loadQuestion();
+}
+
+function loadQuestion() {
+    resetState();
+    let currentQuestion = quizData[currentQuestionIndex];
+    questionText.innerText = `${currentQuestionIndex + 1}. ${currentQuestion.question}`;
+
+    currentQuestion.options.forEach((option, index) => {
+        const button = document.createElement('button');
+        button.innerText = option;
+        button.classList.add('option-btn');
+        button.addEventListener('click', () => selectAnswer(index, currentQuestion.correct, button));
+        optionsContainer.appendChild(button);
+    });
+}
+
+function resetState() {
+    nextBtn.classList.add('hidden');
+    while (optionsContainer.firstChild) {
+        optionsContainer.removeChild(optionsContainer.firstChild);
+    }
+}
+
+function selectAnswer(selectedIndex, correctIndex, selectedButton) {
+    const allButtons = optionsContainer.children;
+    
+    // Disable all buttons to prevent re-selection
+    Array.from(allButtons).forEach(btn => btn.disabled = true);
+
+    if (selectedIndex === correctIndex) {
+        selectedButton.classList.add('correct');
+        score++;
+    } else {
+        selectedButton.classList.add('wrong');
+        // Highlight the correct answer so they learn
+        if(allButtons[correctIndex]) {
+            allButtons[correctIndex].classList.add('correct');
+        }
+    }
+
+    // Logic for Next Button or Finish
+    if (currentQuestionIndex < quizData.length - 1) {
+        nextBtn.classList.remove('hidden');
+    } else {
+        setTimeout(showScore, 1000); // Small delay before showing score
+    }
+}
+
+function showScore() {
+    quizBox.classList.add('hidden');
+    nextBtn.classList.add('hidden');
+    scoreDisplay.classList.remove('hidden');
+    restartBtn.classList.remove('hidden');
+    
+    let message = "";
+    if (score === quizData.length) message = "Perfect Score! You are a Genius! 🌌";
+    else if (score > quizData.length / 2) message = "Great job! You know your paradoxes! 🚀";
+    else message = "Keep learning! The universe is full of mysteries. 📚";
+
+    scoreDisplay.innerHTML = `
+        <h3>Quiz Completed!</h3>
+        <p>You scored <strong>${score}</strong> out of <strong>${quizData.length}</strong></p>
+        <p style="margin-top:10px; color: #a29bfe;">${message}</p>
+    `;
+}
+
+// Next Button Click
+nextBtn.addEventListener('click', () => {
+    currentQuestionIndex++;
+    loadQuestion();
+});
+
+// Restart Button Click
+restartBtn.addEventListener('click', startQuiz);
+
+
+// --- INITIALIZATION ---
+
+// Load both data files on startup
+loadTopics();
+loadQuizData();
+
 
 // --- THREE.JS BACKGROUND ---
 try {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / 200, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ alpha: true });
-    renderer.setSize(window.innerWidth, 200);
+    
+    // Initial size setting
+    renderer.setSize(window.innerWidth, 200); // Height matches CSS usually
     document.getElementById('canvas-container').appendChild(renderer.domElement);
 
     const geometry = new THREE.BufferGeometry();
@@ -125,7 +270,8 @@ try {
 
     window.addEventListener('resize', () => {
         const width = window.innerWidth;
-        const height = document.getElementById('hero-container').clientHeight;
+        // Adjust height dynamically or keep fixed
+        const height = document.getElementById('hero-container') ? document.getElementById('hero-container').clientHeight : 200;
         renderer.setSize(width, height);
         camera.aspect = width / height;
         camera.updateProjectionMatrix();

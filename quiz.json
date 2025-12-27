@@ -1,0 +1,175 @@
+[
+    {
+        "question": "In the 'Ship of Theseus' paradox, what is the central question?",
+        "options": [
+            "If a ship is repaired, does it become faster?",
+            "If every part of a ship is replaced, is it still the same ship?",
+            "Can a ship sail forever without maintenance?",
+            "Does the ship's name change its physical properties?"
+        ],
+        "correct": 1
+    },
+    {
+        "question": "Which phenomenon explains why you see a new word everywhere after learning it?",
+        "options": [
+            "Semantic Satiation",
+            "The Fermi Paradox",
+            "The Baader–Meinhof Phenomenon",
+            "Cryptomnesia"
+        ],
+        "correct": 2
+    },
+    {
+        "question": "According to Heisenberg's Uncertainty Principle, you cannot simultaneously know a particle's...",
+        "options": [
+            "Mass and Charge",
+            "Position and Momentum",
+            "Color and Spin",
+            "Past and Future"
+        ],
+        "correct": 1
+    },
+    {
+        "question": "The 'Fermi Paradox' highlights the contradiction between...",
+        "options": [
+            "The high probability of extraterrestrial life and lack of evidence",
+            "Nuclear energy and safety",
+            "Time travel and causality",
+            "Quantum mechanics and gravity"
+        ],
+        "correct": 0
+    },
+    {
+        "question": "Quantum Tunneling allows a particle to...",
+        "options": [
+            "Travel faster than light",
+            "Pass through a barrier it shouldn't theoretically be able to cross",
+            "Exist in two places at once",
+            "Disappear from existence completely"
+        ],
+        "correct": 1
+    },
+    {
+        "question": "What is 'Semantic Satiation'?",
+        "options": [
+            "Forgetting a word immediately after hearing it",
+            "When a word loses its meaning after being repeated many times",
+            "The inability to find the right word",
+            "Learning a language while sleeping"
+        ],
+        "correct": 1
+    },
+    {
+        "question": "The Pareto Principle suggests that...",
+        "options": [
+            "Work expands to fill the time available",
+            "80% of effects come from 20% of causes",
+            "Whatever can go wrong, will go wrong",
+            "The simplest explanation is usually the correct one"
+        ],
+        "correct": 1
+    },
+    
+    {
+        "question": "The 'Butterfly Effect' suggests that a tiny event, like a butterfly flapping its wings, can lead to...",
+        "options": [
+            "A hurricane on the other side of the world",
+            "The extinction of a species",
+            "No significant changes",
+            "A reversal of time"
+        ],
+        "correct": 0
+    },
+    {
+        "question": "In the context of 'Survivorship Bias', why was armoring the bullet holes on returning planes the wrong decision?",
+        "options": [
+            "The armor was too heavy for the planes to fly",
+            "The planes with holes in other areas never returned to be counted",
+            "The bullet holes were actually aerodynamic speed holes",
+            "The pilots preferred faster planes over armored ones"
+        ],
+        "correct": 1
+    },
+    {
+        "question": "According to the 'Dunning–Kruger Effect', who tends to have the highest (often misplaced) confidence?",
+        "options": [
+            "Experts with years of experience",
+            "People who have never heard of the topic",
+            "Beginners who have learned just a little bit",
+            "Teachers explaining the subject"
+        ],
+        "correct": 2
+    },
+    {
+        "question": "What is the core concept of 'String Theory'?",
+        "options": [
+            "The universe is held together by invisible threads of gravity",
+            "Atoms are made of tiny, vibrating loops of string",
+            "Time creates a string that connects past and future",
+            "Particles are actually tiny dots connected by lines"
+        ],
+        "correct": 1
+    },
+    {
+        "question": "The 'Observer Effect' in quantum mechanics states that...",
+        "options": [
+            "Particles disappear when you look at them",
+            "Measuring a system changes its behavior",
+            "You can see particles with the naked eye",
+            "Observation makes particles move slower"
+        ],
+        "correct": 1
+    },
+    {
+        "question": "Which theory proposes that we might actually be characters in a sophisticated computer program?",
+        "options": [
+            "The Matrix Theory",
+            "The Simulation Hypothesis",
+            "The NPC Paradox",
+            "The Digital Universe Law"
+        ],
+        "correct": 1
+    },
+    {
+        "question": "What is 'Confirmation Bias'?",
+        "options": [
+            "Agreeing with everything your friends say",
+            "The tendency to search for information that supports what you already believe",
+            "Always confirming your plans twice",
+            "Believing something only after seeing it three times"
+        ],
+        "correct": 1
+    },
+    {
+        "question": "In 'Quantum Entanglement', how do two connected particles communicate?",
+        "options": [
+            "Via radio waves",
+            "Through light signals",
+            "Instantly, with no visible signal",
+            "They physically bump into each other"
+        ],
+        "correct": 2
+    },
+    {
+        "question": "The 'Trolley Problem' is a famous ethical dilemma that asks...",
+        "options": [
+            "If a train can stop in time to save a deer",
+            "Whether you should sacrifice one person to save five",
+            "How to build the most efficient public transport",
+            "If stealing a trolley is ever justified"
+        ],
+        "correct": 1
+    },
+    {
+        "question": "According to 'Emergence Theory', complex intelligence (like an ant colony) arises from...",
+        "options": [
+            "A single genius leader",
+            "Many simple parts working together",
+            "Genetic mutation",
+            "Complex programming"
+        ],
+        "correct": 1
+    }
+
+
+]
