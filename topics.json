@@ -159,6 +159,94 @@
     "description": "<strong>Simple Explanation:</strong> A train will kill five people unless you pull a lever to change its path — but that action will kill one person instead.<br><br><strong>The Dilemma:</strong> Do you take action and cause harm, or do nothing and let more people die?<br><br><strong>Why it matters:</strong> It shows how difficult moral decisions can be.",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Trolley_Problem.svg",
     "videoId": "bOpf6KcWYyw"
+  },
+
+
+  {
+    "id": 21,
+    "title": "Dark Matter",
+    "tagline": "\"The Invisible Universe\"",
+    "description": "<strong>Simple Explanation:</strong> Most of the universe is made of something we cannot see, touch, or detect directly, but we know it exists because of its effects.<br><br><strong>Real-Life Example:</strong> Imagine standing under a tree and seeing its leaves move, but you cannot see the wind. You know wind is there because of what it does. Dark matter is like that invisible wind in space.<br><br><strong>Why It Matters:</strong> Without dark matter, galaxies would fall apart. It acts like an invisible glue holding stars and galaxies together, even though we cannot see it.",
+    "imageUrl": "https://science.nasa.gov/wp-content/uploads/2023/10/darkmatter-kipacamnh-1200.jpg?w=800",
+    "videoId": "QAa2O_8wBUQ"
+  },
+  {
+    "id": 22,
+    "title": "Time Dilation",
+    "tagline": "\"Time Doesn’t Tick the Same for Everyone\"",
+    "description": "<strong>Simple Explanation:</strong> Time does not move at the same speed everywhere. It changes depending on how fast you are moving or how strong gravity is around you.<br><br><strong>Real-Life Example:</strong> GPS satellites orbiting Earth experience time slightly faster than clocks on Earth. Scientists must correct this difference, or your phone’s location would be wrong.<br><br><strong>Big Idea:</strong> Time is not fixed like a wall clock—it stretches and slows depending on conditions.",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zWiVvBJRqHLeLSihgoOUlce5JouTQn144g&s",
+    "videoId": "yuD34tEpRFw"
+  },
+  {
+    "id": 23,
+    "title": "Quantum Superposition",
+    "tagline": "\"Both at Once\"",
+    "description": "<strong>Simple Explanation:</strong> Tiny particles like electrons can exist in multiple states at the same time until someone measures them.<br><br><strong>Real-Life Example:</strong> Think of a ceiling fan spinning fast. You see a blur instead of individual blades. Only when it stops do you see its exact position. Particles behave similarly until observed.<br><br><strong>Why It’s Strange:</strong> Reality seems undecided until someone looks at it.",
+    "imageUrl": "https://www.azoquantum.com/images/Article_Images/ImageForArticle_88_17256255059219994.jpg",
+    "videoId": "UjaAxUO6-Uw"
+  },
+  {
+    "id": 24,
+    "title": "The Placebo Effect",
+    "tagline": "\"Healing by Belief\"",
+    "description": "<strong>Simple Explanation:</strong> Sometimes, believing that something will help you actually makes you feel better—even if it has no real medicine in it.<br><br><strong>Real-Life Example:</strong> A person takes a sugar pill thinking it is a painkiller, and their pain actually reduces because the brain releases healing chemicals.<br><br><strong>Lesson:</strong> The mind and body are deeply connected, and belief itself can trigger real physical changes.",
+    "imageUrl": "https://sciencenotes.org/wp-content/uploads/2023/02/Placebo-Effect.png",
+    "videoId": "z03FQGlGgo0"
+  },
+  {
+    "id": 25,
+    "title": "The Cosmic Speed Limit",
+    "tagline": "\"Nothing Beats Light\"",
+    "description": "<strong>Simple Explanation:</strong> Nothing in the universe can travel faster than light—not even information or gravity.<br><br><strong>Real-Life Example:</strong> When you see the Sun, you are actually seeing it as it was about 8 minutes ago because light takes time to reach Earth.<br><br><strong>Why It Matters:</strong> This speed limit controls how the universe works, from time travel ideas to communication across space.",
+    "imageUrl": "https://i.pinimg.com/736x/de/d0/cc/ded0ccc6f1a216ddb869d81e3e99cf2e.jpg",
+    "videoId": "7IjGRGP6YpE"
+ 
+  },
+  {
+    "id": 26,
+    "title": "Neuroplasticity",
+    "tagline": "\"Your Brain Can Rewire Itself\"",
+    "description": "<strong>Simple Explanation:</strong> Your brain changes and adapts based on what you repeatedly do, think, and learn.<br><br><strong>Real-Life Example:</strong> When you practice a musical instrument or coding every day, the brain strengthens those pathways, making the skill easier over time.<br><br><strong>Hopeful Truth:</strong> Even bad habits and fears can be changed with consistent effort.",
+    "imageUrl": "https://www.verywellmind.com/thmb/I_U8gHJCGqt-nuUHbWtymcunlG0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/what-is-brain-plasticity-2794886-01-cb68ba43ed534fb4b220ff86bf28a0e4.png",
+    "videoId": "dmEOJyWVQj4"
+ 
+  },
+  {
+    "id": 27,
+    "title": "The Heat Death of the Universe",
+    "tagline": "\"The Ultimate End\"",
+    "description": "<strong>Simple Explanation:</strong> The universe may eventually reach a state where no energy is left to do any useful work.<br><br><strong>Real-Life Example:</strong> Like a phone battery slowly draining until the phone shuts down completely.<br><br><strong>What Happens Then:</strong> Stars stop forming, everything cools down, and the universe becomes dark and quiet.",
+    "imageUrl": "https://i.ytimg.com/vi/sJqXnZe53MM/maxresdefault.jpg",
+    "videoId": "BJbyPjS7Yt4"
+  
+  },
+  {
+    "id": 28,
+    "title": "Choice Blindness",
+    "tagline": "\"You Don’t Know Why You Choose\"",
+    "description": "<strong>Simple Explanation:</strong> People often don’t truly understand why they make certain choices, even though they confidently explain them.<br><br><strong>Real-Life Example:</strong> You choose a product in a shop, but if someone swaps it secretly, you may still defend the new choice as if you made it.<br><br><strong>Insight:</strong> The brain often creates reasons after the decision is already made.",
+    "imageUrl": "https://www.healthdigest.com/img/gallery/what-is-choice-blindness-and-how-can-it-affect-your-life/l-intro-1670194653.jpg",
+    "videoId": "Dk6t68jB_g8"
+
+  },
+  {
+    "id": 29,
+    "title": "Quantum Foam",
+    "tagline": "\"Reality Is Not Smooth\"",
+    "description": "<strong>Simple Explanation:</strong> At extremely tiny scales, space is not calm or smooth—it constantly bubbles and fluctuates.<br><br><strong>Real-Life Example:</strong> From far away, a road looks smooth. Up close, it has cracks and bumps. Space behaves the same way at very small levels.<br><br><strong>Meaning:</strong> Empty space is actually full of activity.",
+    "imageUrl": "https://i.ytimg.com/vi/G5yBXKvu7L4/sddefault.jpg",
+    "videoId": "jQBhpLwKKEw"
+  
+  },
+
+  {
+    "id": 30,
+    "title": "The Spotlight Effect",
+    "tagline": "\"Everyone Is Not Watching You\"",
+    "description": "<strong>Simple Explanation:</strong> We often think others are paying close attention to us, but in reality, they are focused on themselves.<br><br><strong>Real-Life Example:</strong> You trip in public and feel embarrassed all day, but most people forget it within seconds.<br><br><strong>Relief:</strong> People notice you far less than you think.",
+    "imageUrl": "https://i.ytimg.com/vi/MRPtSy6i0BE/maxresdefault.jpg",
+    "videoId": "lAxOi9EEvlM"
   }
 
 
